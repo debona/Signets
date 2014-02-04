@@ -1,4 +1,6 @@
 Signets::Application.routes.draw do
+  resources :tags
+
   resources :bookmarks
 
   get "pages/index"
