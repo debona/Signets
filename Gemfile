@@ -41,5 +41,7 @@ end
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+group :development, :test do
+  # Use byebug debugger
+  gem 'byebug'
+end
