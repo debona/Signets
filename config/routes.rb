@@ -1,10 +1,13 @@
 Signets::Application.routes.draw do
-  resources :tags
 
+  # Basic pages:
+  root 'pages#index'
+  get 'about' => 'pages#about'
+
+  # Basic resources:
+  resources :tags
   resources :bookmarks
 
-  get "pages/index"
-  get "pages/about"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
