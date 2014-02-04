@@ -44,4 +44,7 @@ end
 group :development, :test do
   # Use byebug debugger
   gem 'byebug'
+
+  # Use rspec test runner
+  gem 'rspec-rails', '~> 2.14.1'
 end
