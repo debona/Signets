@@ -27,6 +27,11 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+# Client side framework (javascript). Read more: http://emberjs.com
+gem "active_model_serializers", '~> 0.8.1'
+gem 'ember-rails',              '~> 0.14.1'
+gem 'ember-source',             '~> 1.3.1.1'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
