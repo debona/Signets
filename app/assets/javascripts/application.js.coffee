@@ -7,4 +7,4 @@
 #= require signets
 
 # for more details see: http://emberjs.com/guides/application/
-window.Signets = Ember.Application.create()
+window.SignetsApp = Ember.Application.create()

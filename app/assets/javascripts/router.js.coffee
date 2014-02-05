@@ -1,4 +1,4 @@
 # For more information see: http://emberjs.com/guides/routing/
 
-Signets.Router.map ()->
+SignetsApp.Router.map ()->
   @resource('home', { path: '/' })
