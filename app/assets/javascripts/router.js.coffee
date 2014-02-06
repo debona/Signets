@@ -2,3 +2,5 @@
 
 SignetsApp.Router.map ()->
 	@route('about')
+	@resource('bookmarks')
+	@resource('bookmark', { path: 'bookmark/:bookmark_id' })
