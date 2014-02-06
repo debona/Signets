@@ -1,0 +1,13 @@
+<h1>Bookmarks</h1>
+
+<ul>
+{{#each}}
+	<li>
+		<strong>{{#link-to 'bookmark' this}}{{title}}{{/link-to}}</strong> : {{url}}
+	</li>
+{{/each}}
+</ul>
+
+<hr>
+{{outlet}}
+<hr>

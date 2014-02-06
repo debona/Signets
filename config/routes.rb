@@ -2,7 +2,6 @@ Signets::Application.routes.draw do
 
   # Basic pages:
   root 'pages#index'
-  get 'about' => 'pages#about'
 
   # Basic resources:
   resources :tags

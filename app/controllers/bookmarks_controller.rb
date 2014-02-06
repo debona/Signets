@@ -1,40 +1,52 @@
+class BookmarkSerializer < ActiveModel::Serializer
+  attributes :id, :title, :url
+end
+
 class BookmarksController < ApplicationController
+  respond_to :json, :html
+
   before_action :set_bookmark, only: [:show, :edit, :update, :destroy]
 
   # GET /bookmarks
   # GET /bookmarks.json
   def index
     @bookmarks = Bookmark.all
+    respond_with(@bookmarks)
   end
 
   # GET /bookmarks/1
   # GET /bookmarks/1.json
   def show
+    respond_with(@bookmark)
   end
 
   # GET /bookmarks/new
   def new
     @bookmark = Bookmark.new
+    respond_with(@bookmark)
   end
 
   # GET /bookmarks/1/edit
   def edit
+    respond_with(@bookmark)
   end
 
   # POST /bookmarks
   # POST /bookmarks.json
   def create
     @bookmark = Bookmark.new(bookmark_params)
+    saved = @bookmark.save
 
-    respond_to do |format|
-      if @bookmark.save
-        format.html { redirect_to @bookmark, notice: 'Bookmark was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @bookmark }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @bookmark.errors, status: :unprocessable_entity }
+    respond_with(@bookmark, :status => saved ? :created : :unprocessable_entity) do |format|
+      format.html do
+        if saved
+          redirect_to @bookmark, notice: 'Bookmark was successfully created.'
+        else
+          render action: :new, status: :unprocessable_entity
+        end
       end
     end
+
   end
 
   # PATCH/PUT /bookmarks/1
