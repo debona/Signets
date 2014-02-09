@@ -1,0 +1,33 @@
+$bg-color: #168cd7;
+$fg-color: #fff;
+
+
+body {
+	margin: 0;
+	background-color: $bg-color;
+	color: $fg-color;
+
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 21px;
+}
+
+a {
+	color: #fff;
+
+	&:visited {
+		color: #eee;
+	}
+	&:hover {
+		color: #ddd;
+	}
+}
+
+#page {
+	margin: 5em;
+	padding: 3em;
+	background-color: #0d66a0;
+	border-radius: 4px
+}
