@@ -24,11 +24,10 @@ gem 'jquery-rails', '~> 3.0.4'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+# Build JSON APIs with ease.
+gem 'active_model_serializers', '~> 0.8.1'
 
 # Client side framework (javascript). Read more: http://emberjs.com
-gem 'active_model_serializers', '~> 0.8.1'
 gem 'ember-rails',              '~> 0.14.1'
 gem 'ember-source',             '~> 1.3.1.1'
 
