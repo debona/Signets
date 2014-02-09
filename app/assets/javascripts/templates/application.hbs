@@ -1,16 +1,20 @@
 <header>
-	<nav>
-		{{#link-to 'index'}}Home{{/link-to}} |
-		{{!-- {{#link-to 'tags'}}Tags{{/link-to}} | --}}
-		{{#link-to 'bookmarks'}}Bookmarks{{/link-to}} |
-		{{#link-to 'about'}}About{{/link-to}}
+		<span>Signets</span>
+	<input type="text">
+	<nav id="main-nav-bar">
+		<ul>
+			<li>{{#link-to 'index'}}Home{{/link-to}}</li>
+			{{!-- <li>{{#link-to 'tags'}}Tags{{/link-to}}</li> --}}
+			<li>{{#link-to 'bookmarks'}}Bookmarks{{/link-to}}</li>
+			<li>{{#link-to 'about'}}About{{/link-to}}</li>
+		</ul>
 	</nav>
 </header>
 
-<page>
+<section id="page">
 	{{outlet}}
-</page>
+</section>
 
 <footer>
-	<p><strike>footer</strike> foobar!</p>
+	<strike>footer</strike> foobar!
 </footer>
