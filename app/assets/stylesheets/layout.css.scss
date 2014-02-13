@@ -1,7 +1,6 @@
 $bg-color: #168cd7;
 $fg-color: #fff;
 
-
 body {
 	margin: 0;
 	background-color: $bg-color;
@@ -12,6 +11,16 @@ body {
 	font-family: verdana, arial, helvetica, sans-serif;
 	font-size: 15px;
 	line-height: 21px;
+
+
+	div.ember-view {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		align-items: stretch;
+
+		min-height: 100vh;
+	}
 }
 
 a {
@@ -29,5 +38,7 @@ a {
 	margin: 5em;
 	padding: 3em;
 	background-color: #0d66a0;
-	border-radius: 4px
+	border-radius: 4px;
+
+	flex: 1;
 }
