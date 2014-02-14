@@ -26,6 +26,8 @@ gem 'turbolinks'
 
 # Build JSON APIs with ease.
 gem 'jbuilder', '~> 2.0.2'
+# Faster JSON serialization
+gem 'yajl-ruby', '~> 1.2.0'
 
 # Client side framework (javascript). Read more: http://emberjs.com
 gem 'ember-rails',              '~> 0.14.1'
