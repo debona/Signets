@@ -25,7 +25,7 @@ gem 'jquery-rails', '~> 3.0.4'
 gem 'turbolinks'
 
 # Build JSON APIs with ease.
-gem 'active_model_serializers', '~> 0.8.1'
+gem 'jbuilder', '~> 2.0.2'
 
 # Client side framework (javascript). Read more: http://emberjs.com
 gem 'ember-rails',              '~> 0.14.1'

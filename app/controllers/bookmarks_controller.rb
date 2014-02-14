@@ -1,7 +1,3 @@
-class BookmarkSerializer < ActiveModel::Serializer
-  attributes :id, :title, :url
-end
-
 class BookmarksController < ApplicationController
   respond_to :json, :html
 
