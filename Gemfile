@@ -32,6 +32,7 @@ gem 'yajl-ruby', '~> 1.2.0'
 # Client side framework (javascript). Read more: http://emberjs.com
 gem 'ember-rails',              '~> 0.14.1'
 gem 'ember-source',             '~> 1.3.1.1'
+gem 'ember-data-source',        '~> 1.0.0.beta.6'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
