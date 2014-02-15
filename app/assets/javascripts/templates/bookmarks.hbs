@@ -29,9 +29,11 @@
 						</g>
 					</g>
 				</svg>
-				<strong>New bookmark</strong> : http://www.somewhere.com
+				{{input type="text" id="new-title" placeholder="New bookmark's title" value=newTitle}}
+				<strong> : </strong>
+				{{input type="text" id="new-url" placeholder="http://www.somewhere.fr" value=newUrl}}
 			</div>
-			<button class="new">+</button>
+			<button class="new" {{action "createBookmark" on="click"}}>+</button>
 		</div>
 	</li>
 
