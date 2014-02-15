@@ -27,5 +27,7 @@ module Signets
     # config.i18n.default_locale = :de
 
     MultiJson.use :yajl
+    # Camelize the attribute name by default
+    Jbuilder.key_format camelize: :lower
   end
 end
