@@ -7,6 +7,24 @@ $logo-height: 2em;
 $border-width: 0.5em;
 $border-radius: 0px;
 
+button {
+	border: none;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #eee;
+}
+
+button:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #eee;
+}
+
+button:active {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+}
+
+
 .bookmarks {
 	margin-left: 10em;
 	margin-right: 10em;
@@ -40,9 +58,13 @@ $border-radius: 0px;
 
 			box-shadow: -0.5em 0.5em 0 0 rgba(0,0,0,0.3);
 
+			div > * {
+				vertical-align: middle;
+			}
+
 			display: flex;
 			flex-wrap: no-wrap;
-			justify-content: flex-start;
+			justify-content: space-between;
 			align-items: center;
 
 			svg {
@@ -61,8 +83,32 @@ $border-radius: 0px;
 					fill: #eee;
 				}
 			}
-
 		}
+	}
 
+	.new-bookmark {
+		@extend .bookmark;
+
+		height: 3.5em;
+
+		background-image: none;
+		background-color: #555;
+
+		.new-ribbon {
+			@extend .ribbon;
+
+			background-color: #fff;
+
+			svg {
+				fill: #ccc;
+
+				circle.inner {
+					fill: #eee;
+				}
+				.star {
+					fill: #fff;
+				}
+			}
+		}
 	}
 }

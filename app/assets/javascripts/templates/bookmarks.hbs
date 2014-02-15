@@ -1,34 +1,73 @@
 <ul class="bookmarks">
+
+	<li class="new-bookmark">
+		<div class="new-ribbon">
+			<div>
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="100" width="240" viewBox="0 0 240 100" preserveAspectRatio="xMinYMid meet" >
+
+					{{!-- <rect x="120" y="0" width="500" height="100" /> --}}
+					<circle class="outer" cx="85"  cy="50" r="85" />
+					<circle class="outer" cx="155" cy="50" r="85" />
+					<circle class="inner" cx="120" cy="50" r="85" fill="red" />
+
+					<g transform="translate(120, 50)"> <!-- same offset as the red circle -->
+						<g transform="scale(1.5)">
+
+							<!--  -->
+							<polygon class="star"
+									points="  0, -50
+											-11, -15
+											-48, -15
+											-18,  6
+											-29,  40
+											 -0,  19
+											 29,  40
+											 18,  6
+											 48, -15
+											 11, -15" />
+
+						</g>
+					</g>
+				</svg>
+				<strong>New bookmark</strong> : http://www.somewhere.com
+			</div>
+			<button class="new">+</button>
+		</div>
+	</li>
+
 {{#each}}
 	<li class="bookmark">
 		<div class="ribbon">
-			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="100" width="240" viewBox="0 0 240 100" preserveAspectRatio="xMinYMid meet" >
+			<div>
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="100" width="240" viewBox="0 0 240 100" preserveAspectRatio="xMinYMid meet" >
 
-				{{!-- <rect x="120" y="0" width="500" height="100" /> --}}
-				<circle class="outer" cx="85"  cy="50" r="85" />
-				<circle class="outer" cx="155" cy="50" r="85" />
-				<circle class="inner" cx="120" cy="50" r="85" fill="red" />
+					{{!-- <rect x="120" y="0" width="500" height="100" /> --}}
+					<circle class="outer" cx="85"  cy="50" r="85" />
+					<circle class="outer" cx="155" cy="50" r="85" />
+					<circle class="inner" cx="120" cy="50" r="85" fill="red" />
 
-				<g transform="translate(120, 50)"> <!-- same offset as the red circle -->
-					<g transform="scale(1.5)">
+					<g transform="translate(120, 50)"> <!-- same offset as the red circle -->
+						<g transform="scale(1.5)">
 
-						<!--  -->
-						<polygon class="star"
-								points="  0, -50
-										-11, -15
-										-48, -15
-										-18,  6
-										-29,  40
-										 -0,  19
-										 29,  40
-										 18,  6
-										 48, -15
-										 11, -15" />
+							<!--  -->
+							<polygon class="star"
+									points="  0, -50
+											-11, -15
+											-48, -15
+											-18,  6
+											-29,  40
+											 -0,  19
+											 29,  40
+											 18,  6
+											 48, -15
+											 11, -15" />
 
+						</g>
 					</g>
-				</g>
-			</svg>
-			<strong>{{#link-to 'bookmark' this}}{{title}}{{/link-to}}</strong> : {{url}}
+				</svg>
+				<strong>{{#link-to 'bookmark' this}}{{title}}{{/link-to}}</strong> : {{url}}
+			</div>
+			<button class="destroy">X</button>
 		</div>
 	</li>
 {{/each}}
