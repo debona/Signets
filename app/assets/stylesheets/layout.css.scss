@@ -35,12 +35,3 @@ a {
 		color: lighten($text-color, 10%);
 	}
 }
-
-#page {
-	margin: 5em;
-	padding: 3em;
-	background-color: $second-color;
-	border-radius: 4px;
-
-	flex: 1;
-}
