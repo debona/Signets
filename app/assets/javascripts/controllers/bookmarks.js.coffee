@@ -1,6 +1,6 @@
 SignetsApp.BookmarksController = Ember.ArrayController.extend
 	actions:
-		createBookmark: ()->
+		create: ()->
 			# Get the bookmark title set by the "New Todo" text field
 			title = @get('newTitle')
 			url   = @get('newUrl')

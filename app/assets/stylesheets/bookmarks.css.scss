@@ -12,18 +12,16 @@ button {
 	cursor: pointer;
 	background-color: rgba(0, 0, 0, 0.6);
 	color: #eee;
-}
 
-button:hover {
-	background-color: rgba(0, 0, 0, 0.4);
-	color: #eee;
+	&:hover {
+		background-color: rgba(0, 0, 0, 0.4);
+		color: #eee;
+	}
+	&:active {
+		background-color: rgba(0, 0, 0, 0.8);
+		color: #fff;
+	}
 }
-
-button:active {
-	background-color: rgba(0, 0, 0, 0.8);
-	color: #fff;
-}
-
 
 .bookmarks {
 	margin-left: 10em;
