@@ -75,7 +75,7 @@
 					<a {{bind-attr href=url}}>{{url}}</a>
 				{{/if}}
 			</div>
-			<button class="destroy">X</button>
+			<button class="destroy" {{action "destroy" on="click"}}>X</button>
 		</div>
 	</li>
 {{/each}}

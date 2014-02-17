@@ -5,5 +5,9 @@ SignetsApp.BookmarkController = Ember.ObjectController.extend
 		save: ()->
 			@get('model').save()
 			@set('isEditing', false)
+		destroy: ()->
+			bookmark = @get('model')
+			bookmark.deleteRecord()
+			bookmark.save()
 
 	isEditing: false
