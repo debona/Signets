@@ -29,11 +29,10 @@
 						</g>
 					</g>
 				</svg>
-				{{input type="text" id="new-title" placeholder="New bookmark's title" value=newTitle}}
+				{{input type="text" id="new-title" placeholder="New bookmark's title" value=newTitle insert-newline="create"}}
 				<strong> : </strong>
-				{{input type="text" id="new-url" placeholder="http://www.somewhere.fr" value=newUrl}}
+				{{input type="text" id="new-url" placeholder="http://www.somewhere.fr" value=newUrl insert-newline="create"}}
 			</div>
-			<button class="new" {{action "create" on="click"}}>+</button>
 		</div>
 	</li>
 
