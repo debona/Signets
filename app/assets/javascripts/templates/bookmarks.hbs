@@ -67,8 +67,8 @@
 					</g>
 				</svg>
 				{{#if isEditing}}
-					{{input type="text" value=title insert-newline="save"}} : 
-					{{input type="text" value=url insert-newline="save"}}
+					{{autofocus-field value=title insert-newline="save"}} : 
+					{{input           value=url   insert-newline="save"}}
 				{{else}}
 					<strong {{action "edit" on="click"}}>{{title}}</strong> :
 					<a {{bind-attr href=url}}>{{url}}</a>
